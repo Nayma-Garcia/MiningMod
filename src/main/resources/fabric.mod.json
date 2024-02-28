@@ -3,7 +3,7 @@
 	"id": "miningtools",
 	"version": "${version}",
 	"name": "mining-tools",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "This is a mining mod. The first thing that will be added is a helmet with a light.",
 	"authors": [
 		"Me!"
 	],
@@ -11,12 +11,15 @@
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/miningtools/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"net.twinkletoes.miningtools.Miningtools"
+		],
+		"client": [
+			"net.twinkletoes.miningtools.MiningtoolsClient"
 		],
 		"fabric-datagen": [
 			"net.twinkletoes.miningtools.MiningtoolsDataGenerator"
